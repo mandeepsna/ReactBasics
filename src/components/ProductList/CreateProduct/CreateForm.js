@@ -63,7 +63,11 @@ const CreateForm = (props) => {
     updateDesc("");
     updateSwitch(false);
     updateImage("");
+
+    props.oncancel();
   };
+
+ 
   return (
     <form className="row g-3" onSubmit={createProductEventHandler}>
       <div className="col-md-6">
@@ -130,6 +134,9 @@ const CreateForm = (props) => {
 
       <button type="submit" className="btn btn-primary">
         Add Product
+      </button>
+      <button type="button" className="btn btn-secondary" onClick={props.oncancel} >
+        Cancel
       </button>
     </form>
   );

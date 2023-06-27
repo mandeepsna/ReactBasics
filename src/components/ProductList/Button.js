@@ -1,7 +1,7 @@
 
 const Button=(Props)=>
 {
-    return( <button onClick={Props.eventHandler} className='btn btn-primary' >{Props.children}</button>
+    return( <button onClick={Props.eventHandler} className='btn btn-primary' disabled={Props.disable} >{Props.children}</button>
 
     );
 }

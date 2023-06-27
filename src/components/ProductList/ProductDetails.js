@@ -20,7 +20,7 @@ const ProductDetails = (Props) => {
   return (
     <div className="d-flex mx-5 g-4  align-items-center">
       <div>
-        <Button children="Mani" eventHandler={valueDecrement}>
+        <Button children="Mani" eventHandler={valueDecrement} disable={ProductCount===0?true :false}>
           -
         </Button>
       </div>
